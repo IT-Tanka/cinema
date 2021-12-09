@@ -15,3 +15,13 @@ const getData=(url)=>fetch(url)
 export const getTriends=async(type='all',period='day',page=1)=>{
     return await getData(`${BASE_URL}trending/${type}/${period}?api_key=${API_KEY}${LANGUAGE}&page=${page}`);
 };
+export const getPopular=async(type, page=1)=>{
+    return await getData(`${BASE_URL}${type}/popular?api_key=${API_KEY}${LANGUAGE}&page=${page}`);
+};
+export const getTop=async(type, page=1)=>{
+    return await getData(`${BASE_URL}${type}/top_rated?api_key=${API_KEY}${LANGUAGE}&page=${page}`);
+};
+
+// https://api.themoviedb.org/3/movie/popular?api_key=<<api_key>>&language=en-US&page=1
+// https://api.themoviedb.org/3/movie/top_rated?api_key=<<api_key>>&language=en-US&page=1
+
