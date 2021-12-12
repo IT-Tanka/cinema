@@ -22,7 +22,7 @@ const renderCard=(data, type)=>{
             img.className='other-films__img';
             img.alt=`постер ${item.title|| item.name}`;
             if( !item.poster_path) {
-                img.src='../img/no_poster.jpg';
+                img.src='img/no_poster.jpg';
                 const filmTitle=document.createElement('h2');
                 filmTitle.style.color= 'rgb(0, 35, 66)';
                 filmTitle.textContent=`${item.title|| item.name}`.toUpperCase();
