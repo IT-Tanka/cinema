@@ -66,6 +66,10 @@
     color: #ff8f8f;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> aa63fac7af9e74a17b34d5816e2f2772b30942df
 .other-films__link[data-rating]:after {
     content: attr(data-rating);
     position: absolute;
