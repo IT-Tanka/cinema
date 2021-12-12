@@ -21,5 +21,4 @@ const slideMenu=({openBtn, menu, classActiveMenu, closeTrigger})=>{
     });
 };
 
-
 export  default slideMenu;

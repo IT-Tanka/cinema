@@ -66,8 +66,7 @@
     color: #ff8f8f;
 }
 
-
-.other-films__link:after {
+.other-films__link[data-rating]:after {
     content: attr(data-rating);
     position: absolute;
     top: 15px;
