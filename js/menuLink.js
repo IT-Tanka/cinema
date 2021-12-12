@@ -35,7 +35,7 @@ const menuLink=()=>{
                     .then(data=>renderCard(data.results, 'tv'));
                 }
                 if (target.classList.contains('get-nav__link_triends')){
-                    title.textContent='В тренды';
+                    title.textContent='В тренде';
                     getTriends()
                     .then(data=>renderCard(data.results));
                 }
